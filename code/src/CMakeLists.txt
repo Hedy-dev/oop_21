@@ -1,0 +1,30 @@
+file (GLOB SRCFILES
+  *.cpp
+)
+
+set (SOURCES
+  ${SRCFILES}
+  PARENT_SCOPE
+)
+
+add_subdirectory(Strategies)
+add_subdirectory(Logger)
+add_subdirectory(VictoryCondition)
+add_subdirectory(Commands)
+set (SOURCES_STRATEGIES
+  ${SOURCES_STRATEGIES_LOCAL}
+  PARENT_SCOPE
+)
+set (SOURCES_LOGGER
+  ${SOURCES_LOGGER_LOCAL}
+  PARENT_SCOPE
+)
+set (SOURCES_VICTORYCONDITION
+  ${SOURCES_VICTORYCONDITION_LOCAL}
+  PARENT_SCOPE
+)
+
+set (SOURCES_COMMANDS
+  ${SOURCES_COMMANDS_LOCAL}
+  PARENT_SCOPE
+)
